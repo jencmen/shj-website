@@ -10,33 +10,34 @@
   <style>
     body {
       font-family: 'Helvetica', sans-serif;
-      color: #333333;
-      background-color: #ffffff;
+      background-color: #F5F1EA;
+      color: #333;
+      margin: 0;
     }
     h1, h2, h3 {
       font-family: 'Helvetica', sans-serif;
+      color: #7A6A4F;
       text-transform: uppercase;
-      color: #BA8A28;
     }
     nav {
-      background-color: white;
-      padding: 15px 30px;
+      background-color: #fefefe;
+      padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid #8D8E92;
+      border-bottom: 1px solid #ccc;
     }
     nav img {
-      height: 60px;
+      height: 50px;
     }
     nav ul {
       list-style: none;
       display: flex;
-      gap: 25px;
+      gap: 30px;
     }
     nav ul li a {
       text-decoration: none;
-      color: #333333;
+      color: #333;
       font-weight: bold;
     }
     nav ul li a:hover {
@@ -45,47 +46,42 @@
     header {
       background: url('assets/A_website_homepage_screenshot_for_Shalev_Jencmen_&.png') no-repeat center center;
       background-size: cover;
-      color: white;
-      padding: 100px 20px;
       text-align: center;
+      padding: 120px 20px;
+      color: white;
     }
     header h1 {
       font-size: 3em;
-      background-color: rgba(0, 0, 0, 0.6);
-      display: inline-block;
-      padding: 10px 20px;
+      margin: 0;
     }
-    section {
-      padding: 50px 30px;
-      border-bottom: 1px solid #AFAFAF;
-    }
-    section ul li {
-      margin-bottom: 10px;
-    }
-    section img.icon {
-      width: 60px;
-      margin-bottom: 15px;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 12px;
+    header p {
+      font-size: 1.2em;
       margin: 10px 0;
-      border: 1px solid #8D8E92;
-      border-radius: 4px;
     }
-    form button {
-      background-color: #BA8A28;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 4px;
-      font-weight: bold;
+    .section {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 60px 40px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
     }
-    form button:hover {
-      background-color: #A89475;
+    .section img.icon {
+      width: 60px;
+      flex-shrink: 0;
+    }
+    .section-content {
+      max-width: 800px;
+    }
+    .section h2 {
+      margin-bottom: 10px;
+      color: #7A6A4F;
+    }
+    .section p {
+      line-height: 1.6;
     }
     footer {
-      background-color: #333333;
+      background-color: #333;
       color: white;
       text-align: center;
       padding: 20px;
@@ -93,124 +89,65 @@
   </style>
 </head>
 <body>
-  <!-- Navigation -->
   <nav>
     <img src="assets/sjc_logo_highres.png" alt="Shalev Jencmen & Co. logo">
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">The Firm</a></li>
-      <li><a href="#vision">Vision</a></li>
+      <li><a href="#vision">Vision & Values</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#industries">Industries</a></li>
-      <li><a href="#team">Team</a></li>
       <li><a href="#values">Brand Values</a></li>
-      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Hero Section -->
   <header id="home">
-    <h1>Welcome to Shalev Jencmen & Co.</h1>
+    <h1>Shalev Jencmen & Co.</h1>
     <p>Your Trusted IP Partners</p>
   </header>
 
-  <!-- The Firm -->
-  <section id="about">
-    <h2>The Firm</h2>
-    <p>Shalev Jencmen & Co. is a leading intellectual property firm in Israel, founded by Adv. and Patent Agent (US) Avi Jencmen and Adv. and Patent Attorney Asaf Shalev. The firm specializes in patents and offers a full scope of legal IP services, with a deep understanding of high-tech, engineering, life sciences, and related fields. Our clients benefit from the personal responsibility of seasoned experts backed by a team of skilled professionals who ensure extraordinary service and reliable results.</p>
-  </section>
-
-  <!-- Vision -->
-  <section id="vision">
-    <h2>Vision & Mission</h2>
-    <img src="assets/icon_vision.png" class="icon" alt="Vision icon">
-    <p><strong>Vision:</strong> Promoting Insightful IP Worldwide</p>
-    <p><strong>Mission:</strong> Providing a Synergetic Spectrum of IP Solutions</p>
-    <p>We offer a broad range of global capabilities, integrating extensive professional knowledge with an insightful, client-centric approach to IP law.</p>
-  </section>
-
-  <!-- Services -->
-  <section id="services">
-    <h2>What We Do</h2>
-    <img src="assets/icon_services.png" class="icon" alt="Services icon">
-    <p>Our areas of expertise are led by professionals with decades of experience in high-tech, mechanical engineering, medical devices, life sciences, and trademarks.</p>
-    <ul>
-      <li>Patent Strategy & Drafting</li>
-      <li>Patent Prosecution (Local & Foreign)</li>
-      <li>Portfolio Management</li>
-      <li>Due Diligence & Commercialization</li>
-      <li>Freedom to Operate & Prior Art Searches</li>
-      <li>Trademarks & Designs</li>
-      <li>IP Litigation Support</li>
-      <li>Open Source Compliance</li>
-    </ul>
-  </section>
-
-  <!-- Industries -->
-  <section id="industries">
-    <h2>Combined Competencies</h2>
-    <img src="assets/icon_industries.png" class="icon" alt="Industries icon">
-    <p>We integrate professional knowledge across segments to deliver exceptional IP service in:</p>
-    <ul>
-      <li>High-Tech & Software</li>
-      <li>Mechanical Engineering</li>
-      <li>Medical Devices</li>
-      <li>Life Sciences</li>
-      <li>Physics</li>
-      <li>Trademarks & Designs</li>
-    </ul>
-  </section>
-
-  <!-- Team -->
-  <section id="team">
-    <h2>Our Team</h2>
-    <img src="assets/icon_team.png" class="icon" alt="Team icon">
-    <p>Led by Avi Jencmen and Asaf Shalev, our team includes expert patent attorneys and agents who bring deep legal and scientific insight to every client engagement.</p>
-  </section>
-
-  <!-- Brand Values -->
-  <section id="values">
-    <h2>Our Brand Values</h2>
-    <img src="assets/icon_values.png" class="icon" alt="Values icon">
-    <ul>
-      <li><strong>Proficiency:</strong> Expert knowledge in multiple fields of IP.</li>
-      <li><strong>Personalized Service:</strong> Agile, client-focused approach.</li>
-      <li><strong>Perspective:</strong> Deep understanding of client needs and realities.</li>
-      <li><strong>Pragmatism:</strong> Goal-oriented and efficient in execution.</li>
-      <li><strong>Precision:</strong> Attention to detail and rigorous quality standards.</li>
-      <li><strong>Partnership:</strong> Long-term relationships built on trust and collaboration.</li>
-    </ul>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-grid">
-      <div>
-        <h3>Israel Office</h3>
-        <p>AMY Building, 24 Ha-Nagar St., Hod Hasharon 4527713, Israel<br>
-        Phone: +972-98-933000<br>
-        Fax: +972-98-933001<br>
-        Email: office@ip-inside.com</p>
-      </div>
-      <div>
-        <h3>USA Office</h3>
-        <p>1806 Summit Ave, Suite 300, Richmond VA 23230, USA<br>
-        Phone: +1-571-2506566<br>
-        Email: office@ip-inside.com</p>
-      </div>
+  <div class="section" id="about">
+    <img src="assets/icon_about.png" class="icon" alt="The Firm">
+    <div class="section-content">
+      <h2>The Firm</h2>
+      <p><strong>Shalev Jencmen & Co.</strong> is one of Israel’s leading intellectual property law firms. Led by Adv. and Patent Agent (US) Avi Jencmen and Adv. and Patent Attorney Asaf Shalev, our team offers in-depth expertise and international perspective.</p>
     </div>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+  </div>
 
-  <!-- Footer -->
+  <div class="section" id="vision">
+    <img src="assets/icon_vision.png" class="icon" alt="Vision & Values">
+    <div class="section-content">
+      <h2>Vision & Values</h2>
+      <p>We focus on delivering meaningful work, practical strategies, and strong client partnerships. We support global reach and exceptional service with clarity and purpose.</p>
+    </div>
+  </div>
+
+  <div class="section" id="services">
+    <img src="assets/icon_services.png" class="icon" alt="Services">
+    <div class="section-content">
+      <h2>Services</h2>
+      <p>We offer a comprehensive range of services including IP strategy, patent drafting, prosecution, open source guidance, and commercialization support.</p>
+    </div>
+  </div>
+
+  <div class="section" id="industries">
+    <img src="assets/icon_industries.png" class="icon" alt="Industries">
+    <div class="section-content">
+      <h2>Industries</h2>
+      <p>Our IP specialists serve clients in fields such as AI, cybersecurity, life sciences, medical devices, semiconductors, and fintech.</p>
+    </div>
+  </div>
+
+  <div class="section" id="values">
+    <img src="assets/icon_values.png" class="icon" alt="Brand Values">
+    <div class="section-content">
+      <h2>Brand Values</h2>
+      <p>We lead with depth, insight, and a culture of excellence. Our team works with integrity and long-term commitment to client success.</p>
+    </div>
+  </div>
+
   <footer>
-    <p>© 2025 Shalev Jencmen & Co. | IP From the Inside | All Rights Reserved</p>
+    <p>© 2025 Shalev Jencmen & Co. | All Rights Reserved</p>
   </footer>
 </body>
 </html>
